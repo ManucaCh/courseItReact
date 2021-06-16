@@ -1,22 +1,20 @@
-import './App.css';
-import Fruits from './components/Fruits';
-import Counter from './components/Counter';
-import Props from './components/Props'
-import Callback from './components/Callback'
+import "./App.css";
+import Fruits from "./components/Fruits";
+import Counter from "./components/Counter";
+import Props from "./components/Props";
 
 function App() {
-  function handleCallback(data){
+  function handleCallback(data) {
     console.log(data);
   }
- 
-  return (
-  <>
-  <Counter />
-  <Fruits />
-  <Props title="Título de una prop"/>
-  <Callback callback={handleCallback} />
 
-  </>
+  return (
+    <>
+      <Counter />
+      <Fruits />
+      <Props title="Título de una prop" />
+      <Callback callback={handleCallback} />
+    </>
   );
 }
 
