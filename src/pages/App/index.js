@@ -1,9 +1,10 @@
-import "./App.css";
-import Fruits from "./components/Fruits";
-import Counter from "./components/Counter";
-import Props from "./components/Props";
-import NumRand from "./components/Callback/NumRand";
+// import "./App.css";
+import Fruits from "../../components/Fruits";
+import Counter from "../../components/Counter";
+import Props from "../../components/Props";
+import NumRand from "../../components/Callback/NumRand";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function App() {
   const [numero1, setNumero1] = useState(false);
@@ -39,6 +40,8 @@ function App() {
       {/* <Counter />
       <Fruits />
       <Props title="Título de una prop" /> */}
+      <p>Soy la home de esta aplicaciopn</p>
+      <Link to="/equipo">Ir a la pagina de Equipo</Link>
       <NumRand callback={handleCallback} name="numero1" />
       <NumRand callback={handleCallback} name="numero2" />
       <p>{resultado}</p>
